@@ -13,8 +13,8 @@ int print_board(void)
     }
     for(i = 0; i < B_X; i++)
     {
-       fb_line(ST_X + i*space, ST_Y, ST_X + i*SPACE, ST_Y + (B_Y - 1)*SPACE, ST_Y + i*SPACE, 0x00ffffff);
+       fb_line(ST_X + i*SPACE, ST_Y, ST_X + i*SPACE, ST_Y + (B_Y - 1)*SPACE, 0x00ffffff);
 
     }
-
+    return 0;
 }
