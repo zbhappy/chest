@@ -51,5 +51,7 @@ int save_bg(int x, int y);
 int mouse_doing(void);
 int get_m_info(int fd, mouse_event *p);
 int chess_do(void);
+int check_win(void);
+int check_one(int x, int y);
 
 #endif
