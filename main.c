@@ -10,7 +10,7 @@ int main(int argc, const char *argv[])
   //  fb_line(300, 0, 600, 700, 0x000000ff);
    // printf("hello world!\n");
 //   fb_circle(512, 415, 20, 0x000000ff);
-   //print_board();
+//   print_board();
 //   save_bg(512, 367);
   // draw_cursor(512, 367);
    //sleep(2);
