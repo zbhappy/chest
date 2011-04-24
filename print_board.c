@@ -3,12 +3,19 @@
 #include"main.h"
 
 extern fbscr_t fb_v;
+extern char chess_board[B_X*B_Y];
+extern u_32_t current_color;
+extern char current_player;
 
 int print_board(void)
 {
     int i = 0;
     int j = 0;
     memset((u_32_t *)fb_v.memo, 0, fb_v.w*fb_v.h*fb_v.bpp/8);
+    memset(chess_board, 0, B_X*B_Y);
+
+    current_player = 1;
+    current_color = BLACK;
 
     for(j = 10; j <ST_Y + SPACE*B_Y ; j++)
     {

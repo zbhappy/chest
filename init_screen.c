@@ -46,6 +46,7 @@ int init_screen()
     fb_v.memo = p;
 
     memset(chess_board, 0, B_X*B_Y);
+    memset((u_32_t*)fb_v.memo, 0, fb_v.w*fb_v.h*fb_v.bpp/8);
     current_player = 1;
     current_color = BLACK;
 
