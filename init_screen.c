@@ -35,7 +35,7 @@ int init_screen()
     fb_v.h = fb_var.yres;
     fb_v.bpp = fb_var.bits_per_pixel;
 
-    p = mmap(NULL, fb_v.w*fb_v.h*fb_v.bpp/8, PROT_WRITE|PROT_READ, MAP_SHARED, fd, 0);
+    p =  mmap(NULL, fb_v.w*fb_v.h*fb_v.bpp/8, PROT_WRITE|PROT_READ, MAP_SHARED, fd, 0);
     printf("x = %d y = %d, bits = %d\n", fb_var.xres, fb_var.yres, fb_var.bits_per_pixel);
     if(p == MAP_FAILED)
     {
